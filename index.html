@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Vioviovio</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <style>
+
+    .vioviovio{
+        text-align:center;
+    }
+
+    #vio{
+      margin-top:12%;
+      margin-left:20%;
+      margin-right:20%;
+      border-radius:10px;
+      background: rgb(240, 208, 91);
+    }
+
+    #viovio{
+      text-align:center;
+      padding-bottom: 10px;
+    }
+
+    #line{
+      margin-left:40%;
+      margin-right:40%;
+      margin-bottom:5%;
+      color:green ;
+    }
+
+    body{
+      background: rgb(139,134,213);
+      background: linear-gradient(90deg, rgba(139,134,213,1) 0%, rgba(165,58,230,1) 54%, rgba(60,161,175,1) 100%);
+    }
+
+
+    /* responsive*/
+
+    @media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .vioviovio{
+        text-align:center;
+    }
+
+    #vio{
+      margin-top:30%;
+      margin-left:2%;
+      margin-right:2%;
+      /* border-radius:10px; */
+      background: rgb(240, 208, 91);
+       font-size: 100px;
+    }
+
+    #viovio{
+      text-align:center;
+      padding-bottom: 10px;
+    }
+
+    #line{
+      margin-left:34%;
+      margin-right:34%;
+      margin-bottom:5%;
+      color:blue ;
+    }
+
+    body{
+      background: rgb(139,134,213);
+      background: linear-gradient(90deg, rgba(139,134,213,1) 0%, rgba(165,58,230,1) 54%, rgba(60,161,175,1) 100%);
+    }
+  }
+
+  #s{
+    font-size: 24px;
+  }
+  </style>
+
+
+  </head>
+  <body>
+      <div class="jumbotron jumbotron-fluid" id="vio">
+          <div class="container">
+            <h1 class="display-4" id="viovio">Vioviovio</h1>
+            <script>
+               function play() {
+                 var audio = document.getElementById("audio");
+                 audio.play();
+               }
+             </script>
+             <hr id="line">
+             <div class="vioviovio">
+               <button type="button" class="btn btn-success" onclick="play()" id="s">Vioviovio</button>
+               <audio id="audio" src="./vioviovio.mp3"></audio>
+             </div>
+          </div>
+      </div>
+  </body>
+</html>
