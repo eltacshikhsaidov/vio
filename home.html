@@ -44,11 +44,11 @@
     }
 
 
-    /* responsive*/
+   /* responsive*/
 
-    @media only screen and (max-width: 500px) {
+ /*     @media only screen and (max-width: 500px) {
     /* For mobile phones: */
-    .vioviovio{
+/*      .vioviovio{
         text-align:center;
     }
 
@@ -57,7 +57,7 @@
       margin-left:2%;
       margin-right:2%;
       /* border-radius:10px; */
-      background: rgb(240, 208, 91);
+  /*      background: rgb(240, 208, 91);
        font-size: 100px;
     }
 
@@ -81,8 +81,33 @@
 
   #s{
     font-size: 24px;
-  }
-  </style>
+  } */
+    
+    .head {
+    font-size: 2em!important;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px white
+}
+
+.count {
+    font-size: 10em!important;
+    text-shadow: 1px 1px 10px black
+}
+
+.counter {
+    min-width: 300px;
+    background: #111;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    box-shadow: 5px 5px 50px black
+    
+    
+    </style>
 
 
   </head>
@@ -103,5 +128,20 @@
              </div>
           </div>
       </div>
+
+        <div class="counter">
+          <script>
+            function updateCounter() {
+              fetch('https://api.countapi.xyz/hit/vio-vio.herokuapp.com/visits')
+              .then(res => res.json())
+              .then(data => counterElement.innerHTML = data.value)
+             }
+
+              updateCounter()
+              counterElement = document.getElementsByClassName('count')[0];
+           </script
+            <div class="head">Total Website Visit</div>
+            <div class="count">00</div>
+        </div>
   </body>
 </html>
