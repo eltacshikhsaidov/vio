@@ -108,6 +108,17 @@
     
     
     </style>
+    
+    <script>
+            function updateCounter() {
+              fetch('https://api.countapi.xyz/hit/vio-vio.herokuapp.com/visits')
+              .then(res => res.json())
+              .then(data => counterElement.innerHTML = data.value)
+             }
+
+              updateCounter()
+              counterElement = document.getElementsByClassName('count')[0];
+           </script
 
 
   </head>
@@ -129,19 +140,11 @@
           </div>
       </div>
 
-        <div class="counter">
-          <script>
-            function updateCounter() {
-              fetch('https://api.countapi.xyz/hit/vio-vio.herokuapp.com/visits')
-              .then(res => res.json())
-              .then(data => counterElement.innerHTML = data.value)
-             }
-
-              updateCounter()
-              counterElement = document.getElementsByClassName('count')[0];
-           </script
+        <div class="class="jumbotron jumbotron-fluid"">
+          <div class="container">
             <div class="head">Total Website Visit</div>
             <div class="count">00</div>
+          </div>
         </div>
   </body>
 </html>
